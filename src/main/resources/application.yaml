@@ -1,0 +1,20 @@
+spring:
+  profiles:
+    active: debug
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+  rabbitmq:
+    host: localhost
+    port: 5672
+    listener:
+      simple:
+        concurrency: 5
+        max-concurrency: 10
+        prefetch: 10
+
+# log
+logging:
+  pattern:
+    console: "%d{HH:mm:ss.SSS} %thread %-5level \\(%file:%line\\) %M - %msg%n"
