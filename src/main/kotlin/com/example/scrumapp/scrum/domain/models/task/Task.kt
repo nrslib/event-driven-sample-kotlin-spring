@@ -6,10 +6,8 @@ import com.example.scrumapp.scrum.domain.models.user.UserId
 import com.example.scrumapp.scrum.domain.models.userstory.UserStoryId
 import com.example.scrumapp.shared.scrum.models.task.ProgressStatus
 import com.example.scrumapp.shared.scrum.models.task.events.TaskStatusChangedEvent
-import lombok.Getter
 
 
-@Getter
 class Task(
     val id: TaskId,
     val storyId: UserStoryId,
